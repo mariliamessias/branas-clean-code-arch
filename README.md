@@ -30,3 +30,10 @@ Aplicação que representará uma variação do aplicativo <i><b>UBER</b></i>, o
    * <b>Método Longo</b>
    * <b>Classe Longa</b>
 -  Design vs. Arquitetura
+-  Projeto: <b>Calcular o preço da corrida</b>
+```bash
+url: /calculate_ride_price
+method: "post"
+input: distance, date
+output: price
+```
