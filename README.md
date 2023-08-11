@@ -8,7 +8,7 @@ Aplicação que representará uma variação do aplicativo <i><b>UBER</b></i>, o
 </br>  
 </br>  
 
-### Aula 01 - Clean Code and Refactoring
+### [Aula 01](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_01) - Clean Code and Refactoring
 -  Clean Code
 -  Code Smells e Técnicas de Refactoring
     * <b>Nomes Ruins:</b>
