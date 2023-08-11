@@ -18,4 +18,15 @@ Aplicação que representará uma variação do aplicativo <i><b>UBER</b></i>, o
       * <i>Técnica aplicada para correção:</i> apagar linhas em branco dentro de métodos e funções.
     * <b>Comentários:</b>
       * <i>Técnica aplicada para correção:</i> introduzir variável explicativa, extrair para métodos e funções para que não haja necessidade de explicação adicional.
+   * <b>Código Morto:</b>
+      * <i>Técnica aplicada para correção:</i> apagar código não utilizado.
+   * <b>Condições confusas e aninhadas:</b>
+      * <i>Identificação:</i> condição confusa e que é complexa a interpretação do seu comportamento.
+      * <i>Técnica aplicada para correção:</i> extrair condições, introduzir cláusulas de guarda (inverter as condições e interromper o fluxo de execução para eliminar o else). Consolidar condições. Introduzir ternário.
+   * <b>Tratamento inadequado de erros ou exceções:</b>
+      * <i>Técnica aplicada para correção:</i> tratar adequadamente os erros ou exceções.
+   * <b>Números Mágicos:</b>
+      * <i>Técnica aplicada para correção:</i> extrair para constantes, extrair para variáveis explicativas.
+   * <b>Método Longo</b>
+   * <b>Classe Longa</b>
 -  Design vs. Arquitetura
