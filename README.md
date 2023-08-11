@@ -32,7 +32,7 @@ Aplicação que representará uma variação do aplicativo <i><b>UBER</b></i>, o
 -  Design vs. Arquitetura
 -  Projeto: <b>Calcular o preço da corrida</b>
 ```bash
-url: /calculate_ride_price
+url: /calculate_ride
 method: "post"
 input: distance, date
 output: price
