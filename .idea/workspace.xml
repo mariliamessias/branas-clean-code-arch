@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d27cf8-454e-4ee6-aecf-64bdccd9de25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aula_02/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/RideController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/RideCalculatorRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/RideSegmentRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/response/RideCalculatorResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/model/Ride.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/model/Segment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/ApplicationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/IntegrationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/controller/RideControllerTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/model/RideTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/PassengersController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/PassengersController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/request/CreatePassengersRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/CreatePassengersRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/response/CreatePassengersResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/response/CreatePassengersResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/PassengersRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/repository/PassengersRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/entities/Passenger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/repository/entities/Passenger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/services/PassengersService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/services/PassengersService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/aula_01/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aula_01/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
