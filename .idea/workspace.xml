@@ -5,38 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54d27cf8-454e-4ee6-aecf-64bdccd9de25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/PassengersController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/request/CreatePassengersRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/response/CreatePassengersResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/PassengersRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/entities/Passenger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/services/PassengersService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/7.5.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/aula_01/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aula_01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aula_01/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/Application.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/RideController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/RideCalculatorRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/RideSegmentRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/response/RideCalculatorResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/model/Ride.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/model/Segment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/ApplicationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/IntegrationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/controller/RideControllerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula_02/src/test/kotlin/com/branas/refactoring/model/RideTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/PassengersController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/PassengersController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/request/CreatePassengersRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/request/CreatePassengersRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/controller/response/CreatePassengersResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/controller/response/CreatePassengersResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/PassengersRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/repository/PassengersRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/repository/entities/Passenger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/repository/entities/Passenger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_01/src/main/kotlin/com/branas/refactoring/services/PassengersService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/aula_02/src/main/kotlin/com/branas/refactoring/services/PassengersService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +52,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="aula_01" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -103,7 +88,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/mariliamessias/Documents/estudos/clean_code_arq/aula_02",
+    "last_opened_file_path": "/Users/mariliamessias/Documents/estudos/clean_code_arq/branas-clean-code-arch/aula_02",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -111,6 +96,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aula_02" />
       <recent name="$PROJECT_DIR$/../aula_02" />
       <recent name="$PROJECT_DIR$/aula_01" />
       <recent name="$PROJECT_DIR$" />
