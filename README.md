@@ -37,3 +37,39 @@ method: "post"
 input: distance, date
 output: price
 ```
+
+### [Aula 02](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_02) - Test-Driven Development
+
+-  Code Smells e Técnicas de Refactoring (Refatoração do algoritmo de validação de CPF);
+- Testes além de auxiliarem na consistência do código desenvolvido, auxilia na documentação;
+- Estrutura base para a construção de um teste: GIVEN (o que é necessário para executar o comportamento esperado), WHEN (execução) e THEN (verificação após a execução do teste, onde é validada a assertividade do comportamento esperado);
+- Testes Unitários: testes de UNIDADE, são mais rápidos e não tem uso de recursos externos;
+- Testes de Integração: testes de várias camadas da aplicação, são mais lentos, tem uso de recursos externos;
+- Testes E2E: testes de ponta a ponta, são mais lentos e têm mais chance de serem sucetíveis a falhas devido a dependência com a interface com o usuário;
+-  Projeto: <b>Suporte a criação e consulta de motoristas e passageiros</b>.
+
+```bash
+url: /drivers
+method: "post"
+input: name, email, document, carPlate
+output: driverId
+```
+
+```bash
+url: /drivers/{driverId}
+method: "get"
+output: id, name, email, document, carPlate, createdAt, updatedAt
+```
+
+```bash
+url: /passengers
+method: "post"
+input: name, email, document
+output: driverId
+```
+
+```bash
+url: /passengers/{passengersId}
+method: "get"
+output: id, name, email, document, createdAt, updatedAt
+```
