@@ -40,13 +40,13 @@ output: price
 
 ### [Aula 02](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_02) - Test-Driven Development
 
--  Code Smells e Técnicas de Refactoring (Refatoração do algoritmo de validação de CPF);
+- Code Smells e Técnicas de Refactoring (Refatoração do algoritmo de validação de CPF);
 - Testes além de auxiliarem na consistência do código desenvolvido, auxilia na documentação;
 - Estrutura base para a construção de um teste: GIVEN (o que é necessário para executar o comportamento esperado), WHEN (execução) e THEN (verificação após a execução do teste, onde é validada a assertividade do comportamento esperado);
 - Testes Unitários: testes de UNIDADE, são mais rápidos e não tem uso de recursos externos;
 - Testes de Integração: testes de várias camadas da aplicação, são mais lentos, tem uso de recursos externos;
 - Testes E2E: testes de ponta a ponta, são mais lentos e têm mais chance de serem sucetíveis a falhas devido a dependência com a interface com o usuário;
--  Projeto: <b>Suporte a criação e consulta de motoristas e passageiros</b>.
+- Projeto: <b>Suporte a criação e consulta de motoristas e passageiros</b>.
 
 ```bash
 url: /drivers
@@ -73,3 +73,19 @@ url: /passengers/{passengersId}
 method: "get"
 output: id, name, email, document, createdAt, updatedAt
 ```
+
+### [Aula 03](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_03) - Ports and Adapters
+
+- <i>A ideia principal do Ports & Adapters é definir a estrutura de uma aplicação para que ela possa ser executada por diferentes tipos de clientes, e possa ser testada isoladamente de dispositivos externos do mundo real do qual a aplicação depende</i> [Ports and Adapters Pattern - jmgarridopaz](https://jmgarridopaz.github.io/content/hexagonalarchitecture.html#tc1);
+</br></br>
+- Arquitetura Hexagonal: 
+  - dentro do hexágono, temos a lógica de negócio, sem relação direta a nenhuma tecnologia, etc;
+  - Fora do hexágono existem os atores, que interagem com a aplicação, que podem ser pessoas, outras aplicações, etc;
+  - Os atores são arranjados em volta do hexágono dependendo de qual tipo de interação será realizada.
+  - Atores do lado esquerdo/superior ao hexágono são chamados de Drivers ou Primary Actors. A interação é feita a partir do ator, que interage com a aplicação.
+  - Atores do lado direito/inferior ao hexágono são chamdos de Driven Actors ou Second Actors, onde a interação com eles é feita a partir da aplicação. Esses atores são responsáveis por prover alguma funcionalidade que a aplicação necessite para a implementação de lógica de negócio.
+  
+![img.png](img.png)
+
+- Transaction Stript: organiza a lógica de negócio em procedures (métodos/funções). Assim criando um fluxo de execução. Ex.: classe de serviço chamando outra classe de serviço, que chama uma classe utilitária, etc; 
+- Domain Model: modelo onde o domínio está distribuído entre os objetos, e incorpora comportamentos e dados;
