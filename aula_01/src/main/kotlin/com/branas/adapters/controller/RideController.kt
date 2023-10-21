@@ -1,9 +1,9 @@
-package com.branas.cleanarch.controller
+package com.branas.adapters.controller
 
-import com.branas.cleanarch.controller.request.RideCalculatorRequest
-import com.branas.cleanarch.controller.response.RideCalculatorResponse
-import com.branas.cleanarch.model.Ride
-import com.branas.cleanarch.model.Segment
+import com.branas.adapters.controller.request.RideCalculatorRequest
+import com.branas.adapters.controller.response.RideCalculatorResponse
+import com.branas.adapters.model.Ride
+import com.branas.adapters.model.Segment
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

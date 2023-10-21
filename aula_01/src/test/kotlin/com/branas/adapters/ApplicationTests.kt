@@ -1,4 +1,4 @@
-package com.branas.cleanarch
+package com.branas.adapters
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

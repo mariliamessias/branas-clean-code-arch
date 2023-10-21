@@ -1,5 +1,7 @@
-package com.branas.cleanarch.model
+package com.branas.adapters.model
 
+import com.branas.adapters.model.Ride
+import com.branas.adapters.model.Segment
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

@@ -1,4 +1,4 @@
-package com.branas.cleanarch.model
+package com.branas.adapters.model
 
 import java.math.BigDecimal
 

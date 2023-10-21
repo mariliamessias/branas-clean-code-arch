@@ -1,4 +1,4 @@
-package com.branas.cleanarch.controller.request
+package com.branas.adapters.controller.request
 
 import java.beans.ConstructorProperties
 

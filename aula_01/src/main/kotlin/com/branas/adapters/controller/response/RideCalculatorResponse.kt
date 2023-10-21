@@ -1,4 +1,4 @@
-package com.branas.cleanarch.controller.response
+package com.branas.adapters.controller.response
 
 import java.math.BigDecimal
 

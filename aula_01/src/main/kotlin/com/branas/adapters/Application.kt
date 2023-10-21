@@ -1,4 +1,4 @@
-package com.branas.cleanarch
+package com.branas.adapters
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
