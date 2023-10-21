@@ -1,4 +1,4 @@
-package com.branas.adapters.domain
+package com.branas.cleanarch.domain
 
 import org.junit.jupiter.api.*
 import java.time.LocalDateTime
