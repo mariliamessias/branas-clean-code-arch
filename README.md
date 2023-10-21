@@ -89,3 +89,7 @@ output: id, name, email, document, createdAt, updatedAt
 
 - Transaction Stript: organiza a lógica de negócio em procedures (métodos/funções). Assim criando um fluxo de execução. Ex.: classe de serviço chamando outra classe de serviço, que chama uma classe utilitária, etc; 
 - Domain Model: modelo onde o domínio está distribuído entre os objetos, e incorpora comportamentos e dados;
+
+### [Aula 04](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_04) - Clean Architecture - Interface Adapters, Frameworks and Drivers, Usecases e Entities
+-  Clean Arch
+   - Isolar camadas de negócio, tornar as camadas independentes, favorece na testabilidade  
