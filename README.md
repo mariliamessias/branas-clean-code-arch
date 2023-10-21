@@ -92,4 +92,13 @@ output: id, name, email, document, createdAt, updatedAt
 
 ### [Aula 04](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_04) - Clean Architecture - Interface Adapters, Frameworks and Drivers, Usecases e Entities
 -  Clean Arch
-   - Isolar camadas de negócio, tornar as camadas independentes, favorece na testabilidade  
+   - Isolar camadas de negócio, tornar as camadas independentes, favorece na testabilidade;
+   
+![img_1.png](img_1.png)
+
+- <b>Entities</b>: são responsáveis por modelar as regras de negócio independentes, aplicadas em qualquer contexto e que podem ser desde um objeto com métodos até mesmo um conjunto de funções;
+- <b>UseCases</b>: são responsáveis fazer as orquestrações das regras de negócio (entidades), e ligá-las a gateways externos. 
+- <b>Interface Adapters</b>: ponte entre os casos de uso e recursos externos (Controller, Gateway, Repository);
+- <b>Frameworks And Drivers</b>: nível mais baixo de abstração, é o componente que realiza a conexão com o banco de dados, requisições HTTP, interage com o sistema de arquivos ou acessa recursos de SO;
+
+Dependency rule: quem está fora conhece quem está dentro, mas quem está dentro não conhece quem está fora.
