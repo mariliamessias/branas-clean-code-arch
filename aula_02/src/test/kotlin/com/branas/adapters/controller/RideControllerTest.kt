@@ -1,8 +1,8 @@
 package com.branas.adapters.controller
 
 import com.branas.adapters.IntegrationTests
-import com.branas.cleanarch.controller.request.RideCalculatorRequest
-import com.branas.cleanarch.controller.request.RideSegmentRequest
+import com.branas.adapters.controller.request.RideCalculatorRequest
+import com.branas.adapters.controller.request.RideSegmentRequest
 import org.junit.jupiter.api.Test
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.post

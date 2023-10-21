@@ -1,9 +1,9 @@
 package com.branas.adapters.service
 
 import com.branas.adapters.UnitTests
-import com.branas.cleanarch.controller.request.CreatePassengersRequest
-import com.branas.cleanarch.repository.PassengersRepository
-import com.branas.cleanarch.repository.entities.Passengers
+import com.branas.adapters.controller.request.CreatePassengersRequest
+import com.branas.adapters.repository.PassengersRepository
+import com.branas.adapters.repository.entities.Passengers
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK

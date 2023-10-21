@@ -1,7 +1,7 @@
 package com.branas.adapters.model
 
-import com.branas.cleanarch.repository.entities.Drivers
-import com.branas.cleanarch.repository.entities.Passengers
+import com.branas.adapters.repository.entities.Drivers
+import com.branas.adapters.repository.entities.Passengers
 import org.junit.jupiter.api.*
 import java.time.LocalDateTime
 

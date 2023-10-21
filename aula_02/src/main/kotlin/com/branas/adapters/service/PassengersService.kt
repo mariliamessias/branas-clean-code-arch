@@ -1,9 +1,9 @@
 package com.branas.adapters.service
 
-import com.branas.cleanarch.controller.request.CreatePassengersRequest
-import com.branas.cleanarch.controller.response.CreatePassengersResponse
-import com.branas.cleanarch.repository.PassengersRepository
-import com.branas.cleanarch.repository.entities.Passengers
+import com.branas.adapters.controller.request.CreatePassengersRequest
+import com.branas.adapters.controller.response.CreatePassengersResponse
+import com.branas.adapters.repository.PassengersRepository
+import com.branas.adapters.repository.entities.Passengers
 import org.springframework.stereotype.Service
 import java.time.LocalDateTime
 import java.util.*

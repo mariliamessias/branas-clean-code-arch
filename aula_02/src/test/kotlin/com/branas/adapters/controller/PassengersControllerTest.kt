@@ -1,7 +1,7 @@
 package com.branas.adapters.controller
 
 import com.branas.adapters.IntegrationTests
-import com.branas.cleanarch.controller.request.CreatePassengersRequest
+import com.branas.adapters.controller.request.CreatePassengersRequest
 import org.hamcrest.CoreMatchers
 import org.junit.jupiter.api.Test
 import org.springframework.http.MediaType

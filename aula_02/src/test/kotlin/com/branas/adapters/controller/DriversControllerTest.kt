@@ -1,7 +1,7 @@
 package com.branas.adapters.controller
 
 import com.branas.adapters.IntegrationTests
-import com.branas.cleanarch.controller.request.CreateDriversRequest
+import com.branas.adapters.controller.request.CreateDriversRequest
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.jupiter.api.Test
 import org.springframework.http.MediaType

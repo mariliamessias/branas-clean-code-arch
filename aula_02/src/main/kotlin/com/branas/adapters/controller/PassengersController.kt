@@ -1,7 +1,7 @@
 package com.branas.adapters.controller
 
-import com.branas.cleanarch.controller.request.CreatePassengersRequest
-import com.branas.cleanarch.service.PassengersService
+import com.branas.adapters.controller.request.CreatePassengersRequest
+import com.branas.adapters.service.PassengersService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

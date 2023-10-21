@@ -1,7 +1,7 @@
 package com.branas.adapters.controller
 
-import com.branas.cleanarch.controller.request.CreateDriversRequest
-import com.branas.cleanarch.service.DriversService
+import com.branas.adapters.controller.request.CreateDriversRequest
+import com.branas.adapters.service.DriversService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

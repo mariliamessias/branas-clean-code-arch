@@ -1,9 +1,9 @@
 package com.branas.adapters.service
 
 import com.branas.adapters.UnitTests
-import com.branas.cleanarch.controller.request.CreateDriversRequest
-import com.branas.cleanarch.repository.DriversRepository
-import com.branas.cleanarch.repository.entities.Drivers
+import com.branas.adapters.controller.request.CreateDriversRequest
+import com.branas.adapters.repository.DriversRepository
+import com.branas.adapters.repository.entities.Drivers
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
