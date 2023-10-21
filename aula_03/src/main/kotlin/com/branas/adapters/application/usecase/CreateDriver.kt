@@ -1,5 +1,6 @@
 package com.branas.adapters.application.usecase
 
+import com.branas.adapters.application.repository.DriverRepository
 import com.branas.adapters.controller.request.CreateDriversRequest
 import com.branas.adapters.controller.response.CreateDriverResponse
 import com.branas.adapters.domain.Driver
@@ -8,7 +9,7 @@ import java.time.LocalDateTime
 
 @Component
 class CreateDriver(
-    private val driverRepository: com.branas.adapters.application.repository.DriverRepository
+    private val driverRepository: DriverRepository
 ) {
     fun execute(request: CreateDriversRequest): CreateDriverResponse {
         val newDriver = Driver.create(

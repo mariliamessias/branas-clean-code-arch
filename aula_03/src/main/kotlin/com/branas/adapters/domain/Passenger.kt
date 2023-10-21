@@ -12,7 +12,7 @@ data class Passenger(
     val createdAt: LocalDateTime,
     val updatedAt: LocalDateTime? = null
 ) {
-    fun toEntity() = com.branas.adapters.application.repository.entities.PassengerEntity(
+    fun toEntity() = PassengerEntity(
         name = name,
         email = email.value,
         document = document.value,

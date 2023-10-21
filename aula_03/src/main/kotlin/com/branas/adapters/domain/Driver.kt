@@ -13,7 +13,7 @@ data class Driver(
     var createdAt: LocalDateTime,
     val updatedAt: LocalDateTime? = null
 ) {
-    fun toEntity() = com.branas.adapters.application.repository.entities.DriverEntity(
+    fun toEntity() = DriverEntity(
         name = name,
         carPlate = carPlate.value,
         document = document.value,

@@ -1,5 +1,6 @@
 package com.branas.adapters.application.usecase
 
+import com.branas.adapters.application.repository.PassengerRepository
 import com.branas.adapters.controller.request.CreatePassengersRequest
 import com.branas.adapters.controller.response.CreatePassengerResponse
 import com.branas.adapters.domain.Passenger
@@ -8,7 +9,7 @@ import java.time.LocalDateTime
 
 @Component
 class CreatePassenger(
-    private val passengerRepository: com.branas.adapters.application.repository.PassengerRepository
+    private val passengerRepository: PassengerRepository
 ) {
     fun execute(request: CreatePassengersRequest): CreatePassengerResponse {
         val newPassenger = Passenger.create(

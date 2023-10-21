@@ -12,7 +12,7 @@ class CalculateRideTest : UnitTests() {
 
 
     @InjectMockKs
-    lateinit var calculateRide: com.branas.adapters.application.usecase.CalculateRide
+    lateinit var calculateRide: CalculateRide
 
     @Test
     fun shouldCalculateRideWithSuccess() {

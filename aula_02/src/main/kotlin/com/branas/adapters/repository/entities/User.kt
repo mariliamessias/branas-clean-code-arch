@@ -6,7 +6,7 @@ private const val VALID_DOCUMENT_REGEX = "[^\\d ]"
 private const val VALID_EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\$"
 private const val EMPTY = ""
 
-@com.branas.adapters.configuration.NoArgs
+@NoArgs
 abstract class User(
     private val name: String,
     private val email: String,

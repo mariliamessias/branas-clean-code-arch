@@ -1,6 +1,8 @@
 package com.branas.adapters.application.usecase
 
 import com.branas.adapters.UnitTests
+import com.branas.adapters.application.repository.PassengerRepository
+import com.branas.adapters.application.repository.entities.PassengerEntity
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
@@ -15,7 +17,7 @@ class GetPassengerTest : UnitTests() {
     lateinit var getPassenger: GetPassenger
 
     @MockK
-    lateinit var passengerRepository: com.branas.adapters.application.repository.PassengerRepository
+    lateinit var passengerRepository: PassengerRepository
 
     @Test
     fun shouldCreatePassengerWithSuccess() {
@@ -23,7 +25,7 @@ class GetPassengerTest : UnitTests() {
         val cpf = "85101946028"
         val name = "name"
         val id = UUID.randomUUID()
-        val entityResult = com.branas.adapters.application.repository.entities.PassengerEntity(
+        val entityResult = PassengerEntity(
             id = id,
             createdAt = LocalDateTime.now(),
             email = email,

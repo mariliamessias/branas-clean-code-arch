@@ -1,11 +1,12 @@
 package com.branas.adapters.repository.entities
 
+import com.branas.adapters.configuration.NoArgs
 import jakarta.persistence.*
 import java.time.LocalDateTime
 import java.util.*
 
 @Entity
-@com.branas.adapters.configuration.NoArgs
+@NoArgs
 @Table
 class Drivers(
     @Id

@@ -1,6 +1,8 @@
 package com.branas.adapters.application.usecase
 
 import com.branas.adapters.UnitTests
+import com.branas.adapters.application.repository.DriverRepository
+import com.branas.adapters.application.repository.entities.DriverEntity
 import com.branas.adapters.controller.request.CreateDriversRequest
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
@@ -17,7 +19,7 @@ class CreateDriverTest : UnitTests() {
     lateinit var createDriver: CreateDriver
 
     @MockK
-    lateinit var driverRepository: com.branas.adapters.application.repository.DriverRepository
+    lateinit var driverRepository: DriverRepository
 
     @Test
     fun shouldCreatePassengerWithSuccess() {
@@ -31,7 +33,7 @@ class CreateDriverTest : UnitTests() {
             document = cpf,
             carPlate = carPlate
         )
-        val entityResult = com.branas.adapters.application.repository.entities.DriverEntity(
+        val entityResult = DriverEntity(
             id = UUID.randomUUID(),
             createdAt = LocalDateTime.now(),
             email = email,
