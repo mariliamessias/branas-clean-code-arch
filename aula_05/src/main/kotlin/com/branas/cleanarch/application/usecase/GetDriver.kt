@@ -20,6 +20,5 @@ class GetDriver(
             createdAt = driver.createdAt,
             updatedAt = driver.updatedAt
         )
-
     }
 }
