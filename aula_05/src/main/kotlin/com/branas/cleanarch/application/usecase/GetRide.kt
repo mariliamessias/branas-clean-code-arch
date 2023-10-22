@@ -13,7 +13,7 @@ class GetRide(
         val ride = rideRepository.getReferenceById(UUID.fromString(id)).toDomain()
         return GetRideResponse(
             rideId = ride.rideId!!,
-            status = ride.status!!,
+            status = ride.status!!.value!!,
             requestDate = ride.requestDate!!
         )
     }

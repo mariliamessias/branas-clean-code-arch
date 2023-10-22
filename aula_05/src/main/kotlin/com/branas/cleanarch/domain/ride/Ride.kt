@@ -3,6 +3,8 @@ package com.branas.cleanarch.domain.ride
 import com.branas.cleanarch.application.repository.entities.RideEntity
 import com.branas.cleanarch.domain.distance.Coord
 import com.branas.cleanarch.domain.fare.chainOfResponsability.FareCalculatorHandler
+import com.branas.cleanarch.domain.ride.status.RideStatus
+import com.branas.cleanarch.domain.ride.status.RideStatusFactory
 import java.math.BigDecimal
 import java.time.LocalDateTime
 import java.util.*
@@ -12,12 +14,12 @@ private const val MIN_PRICE = 10.0
 data class Ride(
     private val positions: MutableList<Position> = arrayListOf(),
     private var fareCalculator: FareCalculatorHandler? = null,
-    val rideId: UUID? = null,
-    val passengerId: UUID? = null,
-    val from: Coord? = null,
-    val to: Coord? = null,
-    var status: String? = null,
-    val requestDate: LocalDateTime? = null,
+    var rideId: UUID? = null,
+    var passengerId: UUID? = null,
+    var from: Coord? = null,
+    var to: Coord? = null,
+    var status: RideStatus? = null,
+    var requestDate: LocalDateTime? = null,
     var driverId: UUID? = null,
     var acceptDate: LocalDateTime? = null,
     var startDate: LocalDateTime? = null,
@@ -58,10 +60,10 @@ data class Ride(
         passengerId = this.passengerId,
         driverId = this.driverId,
         fromLat = this.from!!.lat,
-        fromLong = this.from.long,
+        fromLong = this.from!!.long,
         toLat = this.to!!.lat,
-        toLong = this.to.long,
-        status = this.status!!,
+        toLong = this.to!!.long,
+        status = this.status!!.value!!,
         createdAt = LocalDateTime.now(),
         requestDate = this.requestDate!!,
         acceptDate = this.acceptDate,
@@ -71,18 +73,18 @@ data class Ride(
 
     fun accept(driverId: UUID, date: LocalDateTime) {
         this.driverId = driverId
-        this.status = "accepted"
+        this.status!!.accept()
         this.acceptDate = date
     }
 
     fun start(date: LocalDateTime) {
         this.startDate = date
-        this.status = "in_progress"
+        this.status!!.start()
     }
 
     fun end(date: LocalDateTime) {
-        this.endDate =  date
-        this.status = "completed"
+        this.endDate = date
+        this.status!!.end()
     }
 
     companion object {
@@ -95,4 +97,45 @@ data class Ride(
             requestDate = date
         )
     }
+
+    constructor(
+        rideId: UUID?,
+        passengerId: UUID,
+        from: Coord,
+        to: Coord,
+        status: String,
+        requestDate: LocalDateTime
+    ) : this() {
+        this.status = RideStatusFactory.create(this, status)
+        this.rideId = rideId
+        this.passengerId = passengerId
+        this.from = from
+        this.to = to
+        this.requestDate = requestDate
+    }
+
+    constructor(
+        rideId: UUID?,
+        passengerId: UUID?,
+        driverId: UUID?,
+        status: String,
+        from: Coord,
+        to: Coord,
+        requestDate: LocalDateTime,
+        acceptDate: LocalDateTime?,
+        startDate: LocalDateTime?,
+        endDate: LocalDateTime?
+    ) : this() {
+        this.status = RideStatusFactory.create(this, status)
+        this.driverId = driverId
+        this.rideId = rideId
+        this.passengerId = passengerId
+        this.from = from
+        this.to = to
+        this.requestDate = requestDate
+        this.acceptDate = acceptDate
+        this.startDate = startDate
+        this.endDate = endDate
+    }
+
 }

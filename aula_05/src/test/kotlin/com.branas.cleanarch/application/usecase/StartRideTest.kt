@@ -37,7 +37,7 @@ class StartRideTest : UnitTests() {
             passengerId = UUID.randomUUID(),
             createdAt = LocalDateTime.now(),
             requestDate = LocalDateTime.now(),
-            status = "requested",
+            status = "accepted",
             fromLat = BigDecimal.ZERO,
             fromLong = BigDecimal.ZERO,
             toLat = BigDecimal.ZERO,

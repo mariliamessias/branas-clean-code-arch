@@ -15,7 +15,7 @@ class RideTest {
     @Test
     fun shouldCalculateADayRideWithSuccess() {
         val fareCalculatorHandler = NormalFareCalculatorHandler()
-        val ride = Ride(fareCalculator = fareCalculatorHandler, status = "requested")
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -32,7 +32,7 @@ class RideTest {
     @Test
     fun shouldCalculateANightRideWithSuccess() {
         val fareCalculatorHandler = OvernightFareCalculatorHandler()
-        val ride = Ride(fareCalculator = fareCalculatorHandler, status = "requested")
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -50,7 +50,7 @@ class RideTest {
     @Test
     fun shouldCalculateASundayDayRideWithSuccess() {
         val fareCalculatorHandler = SundayFareCalculatorHandler()
-        val ride = Ride(fareCalculator = fareCalculatorHandler, status = "requested")
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -69,7 +69,7 @@ class RideTest {
     @Test
     fun shouldCalculateASundayNightRideWithSuccess() {
         val fareCalculatorHandler = OvernightSundayFareCalculatorHandler()
-        val ride = Ride(fareCalculator = fareCalculatorHandler, status = "requested")
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -87,7 +87,7 @@ class RideTest {
     @Test
     fun shouldCalculateADayRideWithMinPrice() {
         val fareCalculatorHandler = NormalFareCalculatorHandler()
-        val ride = Ride(fareCalculator = fareCalculatorHandler, status = "requested")
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
