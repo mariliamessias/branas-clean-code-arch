@@ -1,5 +1,10 @@
 package com.branas.cleanarch.domain
 
+import com.branas.cleanarch.domain.fare.chainOfResponsability.NormalFareCalculatorHandler
+import com.branas.cleanarch.domain.fare.chainOfResponsability.OvernightFareCalculatorHandler
+import com.branas.cleanarch.domain.fare.chainOfResponsability.OvernightSundayFareCalculatorHandler
+import com.branas.cleanarch.domain.fare.chainOfResponsability.SundayFareCalculatorHandler
+import com.branas.cleanarch.domain.ride.Ride
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal
@@ -9,7 +14,8 @@ class RideTest {
 
     @Test
     fun shouldCalculateADayRideWithSuccess() {
-        val ride = Ride()
+        val fareCalculatorHandler = NormalFareCalculatorHandler()
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -25,7 +31,8 @@ class RideTest {
 
     @Test
     fun shouldCalculateANightRideWithSuccess() {
-        val ride = Ride()
+        val fareCalculatorHandler = OvernightFareCalculatorHandler()
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -42,7 +49,8 @@ class RideTest {
 
     @Test
     fun shouldCalculateASundayDayRideWithSuccess() {
-        val ride = Ride()
+        val fareCalculatorHandler = SundayFareCalculatorHandler()
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -60,7 +68,8 @@ class RideTest {
 
     @Test
     fun shouldCalculateASundayNightRideWithSuccess() {
-        val ride = Ride()
+        val fareCalculatorHandler = OvernightSundayFareCalculatorHandler()
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),
@@ -77,7 +86,8 @@ class RideTest {
 
     @Test
     fun shouldCalculateADayRideWithMinPrice() {
-        val ride = Ride()
+        val fareCalculatorHandler = NormalFareCalculatorHandler()
+        val ride = Ride(fareCalculator = fareCalculatorHandler)
         ride.addPosition(
             BigDecimal.valueOf(-27.584905257808835),
             BigDecimal.valueOf(-48.545022195325124),

@@ -1,17 +1,18 @@
 package com.branas.cleanarch.application.usecase
 
+import com.branas.cleanarch.application.usecase.CalculateRide
 import com.branas.cleanarch.UnitTests
 import com.branas.cleanarch.infra.request.RideCalculatorRequest
 import com.branas.cleanarch.infra.request.RidePositionRequest
 import io.mockk.impl.annotations.InjectMockKs
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.annotation.Autowired
 import java.math.BigDecimal
 
 class CalculateRideTest : UnitTests() {
 
-
-    @InjectMockKs
+    @Autowired
     lateinit var calculateRide: CalculateRide
 
     @Test

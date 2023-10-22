@@ -1,5 +1,6 @@
 package com.branas.cleanarch.domain
 
+import com.branas.cleanarch.domain.passenger.Passenger
 import org.junit.jupiter.api.*
 import java.time.LocalDateTime
 
