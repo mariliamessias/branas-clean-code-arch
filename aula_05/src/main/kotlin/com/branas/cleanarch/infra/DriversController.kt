@@ -13,6 +13,7 @@ class DriversController(
     private val createDriver: CreateDriver
 ) {
 
+    @CrossOrigin
     @PostMapping("/drivers")
     fun createDriver(@RequestBody request: CreateDriversRequest): ResponseEntity<*> {
         return runCatching {
@@ -23,6 +24,7 @@ class DriversController(
         }
     }
 
+    @CrossOrigin
     @GetMapping("/drivers/{id}")
     fun getDriver(@PathVariable id: String): ResponseEntity<*> {
         return runCatching {

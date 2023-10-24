@@ -13,6 +13,7 @@ class PassengersController(
     private val createPassenger: CreatePassenger
 ) {
 
+    @CrossOrigin
     @PostMapping("/passengers")
     fun createPassenger(@RequestBody request: CreatePassengersRequest): ResponseEntity<*> {
         return runCatching {
@@ -23,6 +24,7 @@ class PassengersController(
         }
     }
 
+    @CrossOrigin
     @GetMapping("/passengers/{id}")
     fun getPassenger(@PathVariable id: String): ResponseEntity<*> {
         return runCatching {
