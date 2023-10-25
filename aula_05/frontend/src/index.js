@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import CreatePassenger from './CreatePassenger.js';
 import reportWebVitals from './reportWebVitals.js';
+import App from './App.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CreatePassenger />
+    <App />
   </React.StrictMode>
 );
 

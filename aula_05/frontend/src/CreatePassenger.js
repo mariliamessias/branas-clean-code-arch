@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import axios from 'axios';
 import './CreatePassenger.css';
+import PassengerGateway from './infra/gateway/PassengerGateway.js';
+import Passenger from './domain/Passenger.js';
 
 function CreatePassenger() {
 
@@ -8,17 +9,12 @@ function CreatePassenger() {
   const [email, setEmail] = useState("")
   const [document, setDocument] = useState("")
   const [passengerId, setPassengerId] = useState("")
-
   async function handleCreatePassenger(){
 
-    const input = {
-      name: name,
-      email: email,
-      document: document
-    }
+    const passenger = new Passenger({name,email,document})
 
-    const response = await axios.post("http://localhost:8080/passengers", input)
-    const output = response.data
+    const passengerGateway = new PassengerGateway();
+    const output = await passengerGateway.save(passenger)
     setPassengerId(output.passengerId)
   }
 
@@ -34,6 +30,8 @@ function CreatePassenger() {
 
   return (
     <div className="Passenger">
+      <img src='https://cdn-icons-png.flaticon.com/512/2566/2566202.png'></img>
+      <h3>Create Passenger</h3>
       <input placeholder="Name" className='passenger-name' onChange={(e) => handleName(e.target.value)} value={name}/>
       <input placeholder="Email" className='passenger-email' onChange={(e) => handleEmail(e.target.value)} value={email}/>
       <input placeholder="Document Number" className='passenger-document' onChange={(e) => handleDocument(e.target.value)} value={document}/>

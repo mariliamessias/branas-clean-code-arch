@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import App from '../App';
+import CreatePassenger from '../CreatePassenger';
 
-test('should test application', () => {
-  const {container,} = render(<App />);
+test('should test create passenger', () => {
+  const { container } = render(<CreatePassenger />);
   container.getElementsByClassName(".passenger-name").item("Jonh Doe")
   container.getElementsByClassName(".passenger-email").item("john.doe@gmail.com")
   container.getElementsByClassName(".passenger-document").item("83432616074")
