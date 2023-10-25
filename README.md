@@ -102,3 +102,13 @@ output: id, name, email, document, createdAt, updatedAt
 - <b>Frameworks And Drivers</b>: nível mais baixo de abstração, é o componente que realiza a conexão com o banco de dados, requisições HTTP, interage com o sistema de arquivos ou acessa recursos de SO;
 
 Dependency rule: quem está fora conhece quem está dentro, mas quem está dentro não conhece quem está fora.
+
+### [Aula 05](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_05) - Clean Architecture - Design Patterns Chain Of Responsability, State e Template Method, Frontend TDD
+-  Clean Arch
+- Design Patterns:
+  - Chain of Responsability: permite passar uma solicitação ao longo de uma cadeia integrada de manipuladores, onde cada um decide se irá processar a solicitação ou passará ao próximo;
+  - State: permite que um objeto altere seu comportamento quando seu estado interno é modificado. O exemplo utilizado em aula, foi a mudança de status de uma corrida.
+  - Template Method: estrutura de uma superclasse onde é definida a estrutura base do algoritmo de forma abstrata, onde as classes concretas fazem a implementação.
+- Desenvolvimento do frontend:
+
+![img_3.png](img_3.png)
