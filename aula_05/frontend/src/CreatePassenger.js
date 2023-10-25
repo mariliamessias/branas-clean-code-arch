@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import './App.css';
+import './CreatePassenger.css';
 
-function App() {
+function CreatePassenger() {
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="Passenger">
-      <input className='passenger-name' onChange={(e) => handleName(e.target.value)} value={name}/>
-      <input className='passenger-email' onChange={(e) => handleEmail(e.target.value)} value={email}/>
-      <input className='passenger-document' onChange={(e) => handleDocument(e.target.value)} value={document}/>
-      <button data-testid="button-id" className='create-passenger-button' onClick={handleCreatePassenger}></button>
+      <input placeholder="Name" className='passenger-name' onChange={(e) => handleName(e.target.value)} value={name}/>
+      <input placeholder="Email" className='passenger-email' onChange={(e) => handleEmail(e.target.value)} value={email}/>
+      <input placeholder="Document Number" className='passenger-document' onChange={(e) => handleDocument(e.target.value)} value={document}/>
+      <button data-testid="button-id" className='create-passenger-button' onClick={handleCreatePassenger}>Create</button>
       <div data-testid="passenger-id" className='passenger-id'>{passengerId}</div>
     </div>
   );
 }
 
-export default App;
+export default CreatePassenger;
