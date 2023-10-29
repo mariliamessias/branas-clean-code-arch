@@ -3,6 +3,7 @@ package com.branas.cleanarch.domain.ride
 import com.branas.cleanarch.application.repository.entities.RideEntity
 import com.branas.cleanarch.domain.distance.Coord
 import com.branas.cleanarch.domain.fare.chainOfResponsability.FareCalculatorHandler
+import com.branas.cleanarch.domain.fare.strategy.FareCalculatorFactory
 import com.branas.cleanarch.domain.ride.status.RideStatus
 import com.branas.cleanarch.domain.ride.status.RideStatusFactory
 import java.math.BigDecimal
@@ -39,9 +40,9 @@ data class Ride(
                     nextPosition.coord
                 )
                 val segment = Segment(distance, nextPosition.date)
-//                val fareCalculator = FareCalculatorFactory.create(segment)
-//                price = price.plus(fareCalculator.calculate(segment))
-                price = price.plus(fareCalculator!!.handle(segment))
+                val fareCalculator = FareCalculatorFactory.create(segment)
+                price = price.plus(fareCalculator.calculate(segment))
+                //price = price.plus(fareCalculator!!.handle(segment))
             }
         }.onFailure {
             when (it) {
