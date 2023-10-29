@@ -112,3 +112,21 @@ Dependency rule: quem está fora conhece quem está dentro, mas quem está dentr
 - Desenvolvimento do frontend:
 
 ![img_3.png](img_3.png)
+
+### [Aula 06](https://github.com/mariliamessias/branas-clean-code-arch/tree/main/aula_06) - Design Patterns, TDD
+
+- testes cypress e2e
+- implementar no frontend o requestride e calculate ride
+- update ride position (questionar o tamanho do aggregate)
+- processar pagamento após end ride (outro bounded context)
+ - enviar comprovante após end ride (outro bounded context)
+- separar a criação de passenger e driver (outro bounded context)
+
+```bash
+url: /request_ride
+method: "post"
+input: passengerId, from, to, date
+output: rideId
+```
+
+![img_2.png](img_2.png)
