@@ -117,10 +117,8 @@ Dependency rule: quem está fora conhece quem está dentro, mas quem está dentr
 
 - testes cypress e2e
 - implementar no frontend o requestride e calculate ride
-- update ride position (questionar o tamanho do aggregate)
-- processar pagamento após end ride (outro bounded context)
- - enviar comprovante após end ride (outro bounded context)
-- separar a criação de passenger e driver (outro bounded context)
+- update ride position
+- separar a criação de passenger e driver
 
 ```bash
 url: /request_ride
